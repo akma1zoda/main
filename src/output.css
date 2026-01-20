@@ -1,4 +1,5 @@
 /*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
+@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -6,6 +7,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-gray-500: oklch(55.1% 0.027 264.364);
+    --color-white: #fff;
+    --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -158,4 +162,139 @@
     display: none !important;
   }
 }
-@layer utilities;
+@layer utilities {
+  .mt-\[20px\] {
+    margin-top: 20px;
+  }
+  .mt-\[23px\] {
+    margin-top: 23px;
+  }
+  .mt-\[30px\] {
+    margin-top: 30px;
+  }
+  .mt-\[60px\] {
+    margin-top: 60px;
+  }
+  .mb-\[33px\] {
+    margin-bottom: 33px;
+  }
+  .flex {
+    display: flex;
+  }
+  .table {
+    display: table;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .gap-\[48px\] {
+    gap: 48px;
+  }
+  .rounded-\[10px\] {
+    border-radius: 10px;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .bg-\[\#35AFBF\] {
+    background-color: #35AFBF;
+  }
+  .bg-\[\#F3FEFF\] {
+    background-color: #F3FEFF;
+  }
+  .p-\[10px\] {
+    padding: 10px;
+  }
+  .p-\[10px_30px\] {
+    padding: 10px 30px;
+  }
+  .p-\[10px_\] {
+    padding: 10px ;
+  }
+  .p-\[15px_30px\] {
+    padding: 15px 30px;
+  }
+  .p-\[15px_35px\] {
+    padding: 15px 35px;
+  }
+  .px-\[150px\] {
+    padding-inline: 150px;
+  }
+  .pt-\[30px\] {
+    padding-top: 30px;
+  }
+  .pb-\[9\] {
+    padding-bottom: 9;
+  }
+  .pb-\[90px\] {
+    padding-bottom: 90px;
+  }
+  .text-\[22px\] {
+    font-size: 22px;
+  }
+  .text-\[52px\] {
+    font-size: 52px;
+  }
+  .leading-\[125\%\] {
+    --tw-leading: 125%;
+    line-height: 125%;
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .text-\[\#35AFBF\] {
+    color: #35AFBF;
+  }
+  .text-gray-500 {
+    color: var(--color-gray-500);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-outline-style: solid;
+    }
+  }
+}
